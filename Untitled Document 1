@@ -1,0 +1,231 @@
+1. First command is WHO
+    and in under that 
+    Name
+       who-show who logged on
+there are so many description
+* who -a,--all
+* who -b,--boot (that means the time of last system booted)
+* who -d,--dead(print dead process)
+* who -H,--heading(print line of coloumn headings
+* who -l,--login(print system login processes)
+* who -m   (only hostname and user associated with studin)
+* who -p,--process(print active processes spawned by init)
+* who -q,--count(all login names and number of users logged on)
+* who -r,--runlevel(print current level)
+* who -s,--short(print only name,line and time)
+
+2. using (man date) -d, --date=STRING
+              display time described by STRING, not 'now'
+
+       --debug
+              annotate the parsed date, and warn about questionable  usage  to
+              stderr
+
+       -f, --file=DATEFILE
+              like --date; once for each line of DATEFILE
+
+       -I[FMT], --iso-8601[=FMT]
+              output  date/time  in ISO 8601 format.  FMT='date' for date only
+              (the default), 'hours', 'minutes', 'seconds', or 'ns'  for  date
+              and    time    to    the    indicated    precision.     Example:
+              2006-08-14T02:34:56-06:00
+
+       -R, --rfc-2822
+              output date and time in RFC 2822 format.  Example: Mon,  14  Aug
+              2006 02:34:56 -0600
+  --rfc-3339=FMT
+              output  date/time in RFC 3339 format.  FMT='date', 'seconds', or
+              'ns' for date and time to  the  indicated  precision.   Example:
+              2006-08-14 02:34:56-06:00
+
+       -r, --reference=FILE
+              display the last modification time of FILE
+
+       -s, --set=STRING
+              set time described by STRING
+
+       -u, --utc, --universal
+              print or set Coordinated Universal Time (UTC)
+
+       --help display this help and exit
+
+       --version
+  %a     locale's abbreviated weekday name (e.g., Sun)
+
+       %A     locale's full weekday name (e.g., Sunday)
+
+       %b     locale's abbreviated month name (e.g., Jan)
+
+       %B     locale's full month name (e.g., January)
+
+       %c     locale's date and time (e.g., Thu Mar  3 23:05:25 2005)
+
+       %C     century; like %Y, except omit last two digits (e.g., 20)
+
+       %d     day of month (e.g., 01)
+
+       %D     date; same as %m/%d/%y
+
+       %e     day of month, space padded; same as %_d
+
+       %F     full date; same as %Y-%m-%d
+
+       %g     last two digits of year of ISO week number (see %G)
+  %H     hour (00..23)
+
+       %I     hour (01..12)
+
+       %j     day of year (001..366)
+
+       %k     hour, space padded ( 0..23); same as %_H
+
+       %l     hour, space padded ( 1..12); same as %_I
+
+       %m     month (01..12)
+
+       %M     minute (00..59)
+
+       %n     a newline
+
+       %N     nanoseconds (000000000..999999999)
+
+       %p     locale's equivalent of either AM or PM; blank if known
+
+ 3.using (man bc)
+
+       expr1 < expr2
+              The result is 1 if expr1 is strictly less than expr2.
+
+       expr1 <= expr2
+              The result is 1 if expr1 is less than or equal to expr2.
+
+       expr1 > expr2
+              The result is 1 if expr1 is strictly greater than expr2.
+
+       expr1 >= expr2
+              The result is 1 if expr1 is greater than or equal to expr2.
+
+       expr1 == expr2
+              The result is 1 if expr1 is equal to expr2.
+
+       expr1 != expr2
+              The result is 1 if expr1 is not equal to expr2.
+
+  -h, --help
+              Print the usage and exit.
+
+       -i, --interactive
+              Force interactive mode.
+
+       -l, --mathlib
+              Define the standard math library.
+
+       -w, --warn
+              Give warnings for extensions to POSIX bc.
+
+       -s, --standard
+              Process exactly the POSIX bc language.
+
+       -q, --quiet
+              Do not print the normal GNU bc welcome.
+
+       -v, --version
+              Print the version number and copyright and quit.
+
+4. using (man cal)
+
+
+  -h      Turns off highlighting of today.
+
+     -J      Display Julian Calendar, if combined with the -o option, display
+             date of Orthodox Easter according to the Julian Calendar.
+
+     -e      Display date of Easter (for western churches).
+
+     -j      Display Julian days (days one-based, numbered from January 1).
+
+     -o      Display date of Orthodox Easter (Greek and Russian Orthodox
+             Churches).
+
+     -p      Print the country codes and switching days from Julian to Grego‐
+             rian Calendar as they are assumed by ncal.  The country code as
+             determined from the local environment is marked with an asterisk.
+
+     -s country_code
+             Assume the switch from Julian to Gregorian Calendar at the date
+             associated with the country_code.  If not specified, ncal tries
+             to guess the switch date from the local environment or falls back
+             to September 2, 1752.  This was when Great Britain and her
+             colonies switched to the Gregorian Calendar.
+
+     -w      Print the number of the week below each week column.
+
+5. using(man time)
+
+  -a, --append
+              Append the resource use information to the output file instead
+              of overwriting it.  This option is only useful with the `-o' or
+              `--output' option.
+
+       -f FORMAT, --format FORMAT
+              Use FORMAT as the format string that controls the output of
+              time.  See the below more information.
+
+       --help Print a summary of the command line options and exit.
+
+       -p, --portability
+              Use the following format string, for conformance with POSIX
+              standard 1003.2:
+                        real %e
+                        user %U
+       -v, --verbose
+              Use the built-in verbose format, which displays each available
+              piece of information on the program's resource use on its own
+              line, with an English description of its meaning.
+
+       --quiet
+              Do not report the status of the program even if it is different
+              from zero.
+
+       -V, --version
+              Print the version number of time and exit.
+
+6.using (man uname)
+
+  -a, --all
+              print  all  information,  in the following order, except omit -p
+              and -i if unknown:
+
+       -s, --kernel-name
+              print the kernel name
+
+       -n, --nodename
+              print the network node hostname
+
+       -r, --kernel-release
+ -v, --kernel-version
+              print the kernel version
+
+       -m, --machine
+              print the machine hardware name
+
+       -p, --processor
+              print the processor type (non-portable)
+
+       -i, --hardware-platform
+              print the hardware platform (non-portable)
+
+       -o, --operating-system
+              print the operating system
+
+       --help display this help and exit
+
+
+
+
+
+
+
+
+
+ 
